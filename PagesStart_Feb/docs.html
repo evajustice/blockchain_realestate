@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Internal Design Features</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<link rel="preload" href="./nexmoe.css" as="style" />
+		<link rel="stylesheet" href="./nexmoe.css" />
+		<style>
+			a[target="_blank"]::after {
+				content: "↗";
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<a><h1>Nexmoe.css</h1></a>
+			<ul>
+				<li><a href="./index.html">Home</a></li>
+				<li><a checked>Docs</a></li>
+				<li>
+					<a href="#">Links / 链接</a>
+					<ul>
+						<li>
+							<a href="https://twitter.com/nexmoe" target="_blank"
+								>Twitter</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://www.npmjs.com/package/nexmoe.css"
+								target="_blank"
+								>NPM</a
+							>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a
+						href="https://github.com/nexmoe/nexmoe.css"
+						target="_blank"
+						>Github</a
+					>
+				</li>
+			</ul>
+		</nav>
+
+		<main>
+			<section>
+				<header><h1>Typography / 版式</h1></header>
+
+				<h1>
+					Heading 1
+					<code>2.7rem</code>
+				</h1>
+
+				<h2>
+					Heading 2
+					<code>2rem</code>
+				</h2>
+
+				<h3>
+					Heading 3
+					<code>1.5rem</code>
+				</h3>
+
+				<h4>
+					Heading 4
+					<code>1.17rem</code>
+				</h4>
+
+				<h5>
+					Heading 5
+					<code>1rem</code>
+				</h5>
+
+				<h6>
+					Heading 6
+					<code>0.83rem</code>
+				</h6>
+				<hr />
+				<p><a href="https://example.com">I'm a hyperlink</a></p>
+				<b>Bold text</b>
+				<i>Italic text</i>
+				<u>Underlined text</u>
+				<mark>Highlighted text</mark>
+				<code>Inline code</code>
+				<kbd>Alt+F4</kbd>
+				<ul>
+					<li>Item 1</li>
+					<li>Item 2</li>
+					<li>Item 3</li>
+				</ul>
+
+				<ol>
+					<li>Do this thing</li>
+					<li>Do that thing</li>
+					<li>Do the other thing</li>
+				</ol>
+				<blockquote>
+					<p>Stay hungry, stay foolish.</p>
+					<p><cite>– Steve Jobs</cite></p>
+				</blockquote>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Quisque dictum hendrerit velit, quis ullamcorper sem congue
+					ac. Quisque id magna rhoncus, sodales massa vel, vestibulum
+					elit. Duis ornare accumsan egestas. Proin maximus lacus
+					interdum leo molestie convallis. Orci varius natoque
+					penatibus et magnis dis parturient montes, nascetur
+					ridiculus mus. Ut iaculis risus eu felis feugiat, eu mollis
+					neque elementum. Donec interdum, nisl id dignissim iaculis,
+					felis dui aliquet dui, non fermentum velit lectus ac quam.
+					Class aptent taciti sociosqu ad litora torquent per conubia
+					nostra, per inceptos himenaeos.
+					<strong>This is strong,</strong> this is normal,
+					<b>this is just bold,</b>
+					<em>and this is emphasized!</em> And heck,
+					<a href="/">here</a>'s a link.
+				</p>
+			</section>
+
+			<section>
+				<header>
+					<h1>Form / 表单</h1>
+				</header>
+
+				<form>
+					<p>
+						<button>Button</button>
+					</p>
+					<p>
+						<input type="button" value="Input Button" />
+					</p>
+					<p>
+						<input type="submit" value="Input Submit" />
+					</p>
+					<p>
+						<input type="reset" value="Input Reset" />
+					</p>
+					<p>
+						<input value="Input" />
+					</p>
+					<p>
+						<textarea>Textarea</textarea>
+					</p>
+					<p><input type="date" /></p>
+					<p><input type="color" /></p>
+					<p>
+						<label
+							><input type="checkbox" checked /> Put it away
+							deeper / 收起得更深</label
+						>
+					</p>
+					<p>
+						<label
+							><input type="checkbox" /> Show on the right /
+							显示在右边</label
+						>
+					</p>
+					<div>
+						<label
+							><input
+								type="radio"
+								name="nexmoe"
+								value="nexmoe1"
+								checked
+							/>nexmoe1</label
+						>
+						<label
+							><input
+								type="radio"
+								name="nexmoe"
+								value="nexmoe2"
+							/>nexmoe2</label
+						>
+						<label
+							><input
+								type="radio"
+								name="nexmoe"
+								value="nexmoe3"
+							/>nexmoe3</label
+						>
+					</div>
+				</form>
+			</section>
+
+			<section>
+				<header>
+					<h1>Nav and Title / 导航栏和标题</h1>
+				</header>
+				<h1>Nexmoe.css</h1>
+				<nav>
+					<ul>
+						<li><a checked>Home</a></li>
+						<li>
+							<a href="#">Links / 链接</a>
+							<ul>
+								<li>
+									<a
+										href="https://twitter.com/nexmoe"
+										target="_blank"
+										>Twitter</a
+									>
+								</li>
+								<li>
+									<a
+										href="https://www.npmjs.com/package/nexmoe.css"
+										target="_blank"
+										>NPM</a
+									>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<a
+								href="https://github.com/nexmoe/nexmoe.css"
+								target="_blank"
+								>Github</a
+							>
+						</li>
+					</ul>
+				</nav>
+				<p>or</p>
+				<nav>
+					<a><h1>Nexmoe.css</h1></a>
+					<ul>
+						<li><a checked>Home</a></li>
+						<li>
+							<a href="#">Links / 链接</a>
+							<ul>
+								<li>
+									<a
+										href="https://twitter.com/nexmoe"
+										target="_blank"
+										>Twitter</a
+									>
+								</li>
+								<li>
+									<a
+										href="https://www.npmjs.com/package/nexmoe.css"
+										target="_blank"
+										>NPM</a
+									>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<a
+								href="https://github.com/nexmoe/nexmoe.css"
+								target="_blank"
+								>Github</a
+							>
+						</li>
+					</ul>
+				</nav>
+				<p>Pagination</p>
+				<nav>
+					<ul>
+						<li><a checked>1</a></li>
+						<li><a>2</a></li>
+						<li><a>3</a></li>
+					</ul>
+				</nav>
+			</section>
+
+			<section>
+				<header>
+					<h1>Dialog / 对话框</h1>
+				</header>
+				<p>
+					<button onclick="dialogOpen()">Open Dialog</button>
+					<script>
+						const dialogOpen = () => {
+							const dialog = document.getElementById("favDialog");
+							dialog.showModal();
+						};
+					</script>
+				</p>
+				<dialog id="favDialog">
+					<form method="dialog">
+						<fieldset>
+							<legend>Life is:</legend>
+							<div>
+								<input type="text" value="beautiful" />
+								<p>and</p>
+								<input type="text" value="awesome" />
+							</div>
+						</fieldset>
+						<menu>
+							<button value="cancel" text>Cancel</button>
+							<button value="default">OK</button>
+						</menu>
+					</form>
+				</dialog>
+			</section>
+
+			<section>
+				<header>
+					<h1>Other / 其它</h1>
+				</header>
+				<article>
+					<details>
+						<summary>Telegram</summary>
+					</details>
+					<div>
+						<p>
+							Channel:
+							<a href="https://t.me/nexmoe_css" target="_blank"
+								>https://t.me/nexmoe_css</a
+							>
+						</p>
+					</div>
+				</article>
+				<br />
+				<article>
+					<details>
+						<summary>QQ Group</summary>
+					</details>
+					<div>
+						<p>
+							<img
+								src="https://i.dawnlab.me/dd3197d07cfd82a018e0cf9e4220957b.md.jpg"
+							/>
+						</p>
+					</div>
+				</article>
+			</section>
+
+			<section>
+				<header>
+					<h1>Dark Mode / 暗色模式</h1>
+					<p>
+						It will be automatically detected and applied. /
+						将会自动跟随你的系统。
+					</p>
+				</header>
+			</section>
+		</main>
+		<footer>
+			<p>
+				Made with ❤ by
+				<a href="https://twitter.com/nexmoe" target="_blank">Nexmoe</a>
+			</p>
+		</footer>
+	</body>
+	<script></script>
+</html>

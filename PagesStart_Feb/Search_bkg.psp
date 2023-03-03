@@ -1,0 +1,90 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Search the Blockchain</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<link rel="preload" href="./nexmoe3.css" as="style" />
+		<link rel="stylesheet" href="./nexmoe3.css" />
+		<link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+		<style>
+			a[target="_blank"]::after {
+				content: "↗";
+			}
+			#download::after {
+				content: none;
+			}
+			article {
+				padding: 2rem;
+			}
+			articlegrid {
+				grid-template-columns: 1fr 1fr;
+				grid-gap: 2rem;
+				display: grid;
+			}
+			@media (max-width: 700px) {
+				articlegrid {
+					grid-template-columns: 1fr;
+				}
+			}
+			mark {
+				background-color: #FFD700;
+				color: black;
+			}
+			p {
+				margin-top: 300px;
+			}
+		</style>
+    </head>
+    <body>
+		<nav class="nav-wrapper", style="padding: 25px; padding-top: 30px;">
+			<a href="http://www1.coe.neu.edu/Groups/blockchain/PagesStart_Feb/StartPage.html">
+				<h1 style="font-family: optima, serif">
+					<img src="logo-final_Lighter.png" title = "return" width ="auto" height = "50" style="float: start">
+					<b>GENISTREET</b>
+				</h1>
+			</a>
+			<ul>
+				<li><a href="http://www1.coe.neu.edu/Groups/blockchain/PagesStart_Feb/StartPage.html">Home</a></li>
+				<li>
+					<a checked href="http://www1.coe.neu.edu/Groups/blockchain/PagesStart_Feb/SearchPage.html">Search A Record</a>
+					<ul>
+						<li>
+							<a href="http://www1.coe.neu.edu/Groups/blockchain/blockchain_app/templates/form.html">Submit A Deed</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="https://www.sec.state.ma.us/rod/rodidx.htm">Registry History</a>
+					<ul>
+						<li>
+							<a href="https://www.masslandrecords.com/suffolk/" target="_blank">
+							Info Site
+							</a>
+						</li>
+						<li>
+							<a
+								href="https://massrods.com/suffolk/contact-and-directions/"
+								target="_blank">Our Contacts</a>
+						</li>
+						<li>
+							<a
+								href="https://www.masslandrecords.com/suffolk/" target="_blank">
+								Current Website
+								</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="https://coe.northeastern.edu/Groups/blockchain/PagesStart_Feb/AboutUs.html"> About Us</a>
+				</li>
+			</ul>
+        </nav>
+
+<%
+req.write("<p>")
+search_ip = form.get("search_input", "Error in Search")
+req.write("You entered: " + search_ip)
+req.write("</p>")
+%>
+</body>
+</html>
