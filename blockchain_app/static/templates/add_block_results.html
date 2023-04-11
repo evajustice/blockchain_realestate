@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Search the Blockchain</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<link rel="preload" href="./static/nexmoe3.css" as="style" />
+		<link rel="stylesheet" href="./static/nexmoe3.css" />
+		<link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+		<style>
+			a[target="_blank"]::after {
+				content: "↗";
+			}
+			#download::after {
+				content: none;
+			}
+			article {
+				padding: 2rem;
+			}
+			articlegrid {
+				grid-template-columns: 1fr 1fr;
+				grid-gap: 2rem;
+				display: grid;
+			}
+			@media (max-width: 700px) {
+				articlegrid {
+					grid-template-columns: 1fr;
+				}
+			}
+			mark {
+				background-color: #FFD700;
+				color: black;
+			}
+		</style>
+    </head>
+    <body>
+		<nav class="nav-wrapper", style="padding: 25px; padding-top: 30px;">
+			<a href="index.html">
+				<h1 style="font-family: optima, serif">
+					<img src="http://www1.coe.neu.edu/Groups/blockchain/Genistreet/logo-final_Lighter.png" title = "return" width ="auto" height = "50" style="float: start">
+					<b>GENISTREET</b>
+				</h1>
+			</a>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a checked href="form.html">Submit A Deed</a></li>
+				<li><a href="SearchBlocks.html">Search A Record</a></li>
+				<li>
+					<a href="https://www.sec.state.ma.us/rod/rodidx.htm" target="_blank">Registry History</a>
+					<ul>
+						<li>
+							<a
+								href="https://massrods.com/suffolk/contact-and-directions/"
+								target="_blank">Our Contacts</a>
+							<!-- "_blank" is for the arrow indicator next to a link-->
+						</li>
+						<li>
+							<a
+								href="https://www.masslandrecords.com/suffolk/"
+								target="_blank">Current Website</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="AboutUs.html"> About Us</a>
+				</li>
+				<li></li>
+			</ul>
+		</nav>
+    <main>
+            <header style="text-align: left; padding-top: 5px;">
+				{% if val == "Blockchain Valid" %}
+
+                <h2><b></b>Thank You for Recording!</b></h2>
+				<h5><i>Your entry has been added to the blockchain</i></h5>
+
+				<h4>
+					Your newly recorded block:
+				</h4>
+                <hr/>
+            </header>
+            <p style="text-align: left;">
+                
+				<li>Hash Code: {{result["Hash Code"]}}</li>
+				<li>Block Index: {{result["Index"]}}</li>
+				<li>Address: {{result["Address"]}}</li>
+				<li>Grantor Name: {{result["Grantor FName"]}} {{result["Grantor LName"]}}</li>
+				<li>Grantee Name: {{result["Grantee FName"]}} {{result["Grantee LName"]}}</li>
+				<li>Previous Hash Code: {{result["Previous Hash Code"]}}</li>
+				{% else %}
+				
+					<h1><b> <FONT COLOR="ff0000">{{val}}</FONT></b></h1>
+				
+				{% endif %}
+            </p>
+    </main>
+    </body>
+</html>
