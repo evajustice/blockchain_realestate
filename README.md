@@ -10,8 +10,8 @@ blockchain_app:
     blockchain.py ~ Primary Python Blockchain;
     blockchain.txt ~ Hash Codes;
     RegistryDataset.csv ~ (2016 - 2022) Registry Dataset;
-    static ~ CSS Files;
-        
-        templates ~ Directly Linked to Python File;
+    static ~ Directory of Pages that DONT Change;
+        templates ~ HTML & CSS packages in the forefront;
+        img ~ Images used throughout HTML websites;
 
 Thank you for checking out our project!
