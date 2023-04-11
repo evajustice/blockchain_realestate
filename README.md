@@ -7,10 +7,11 @@ Design title: Genistreet.
 Directories included:
 
 blockchain_app:
+
 	blockchain.py ~ Primary Python Blockchain;
     blockchain.txt ~ Hash Codes;
     RegistryDataset.csv ~ (2016 - 2022) Registry Dataset;
-    static ~ Directory of Pages that DONT Change;
+    static ~ Directory of Pages that DON'T Change;
         templates ~ HTML & CSS packages in the forefront;
         img ~ Images used throughout HTML websites;
 
