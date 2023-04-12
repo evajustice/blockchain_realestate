@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Search the Blockchain</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<link rel="preload" href="./static/nexmoe3.css" as="style" />
+		<link rel="stylesheet" href="./static/nexmoe3.css" />
+		<link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+		<style>
+			a[target="_blank"]::after {
+				content: "↗";
+			}
+			#download::after {
+				content: none;
+			}
+			article {
+				padding: 2rem;
+			}
+			articlegrid {
+				grid-template-columns: 1fr 1fr;
+				grid-gap: 2rem;
+				display: grid;
+			}
+			@media (max-width: 700px) {
+				articlegrid {
+					grid-template-columns: 1fr;
+				}
+			}
+			mark {
+				background-color: #FFD700;
+				color: black;
+			}
+		</style>
+    </head>
+    <body style="background-color:#FCEED9">
+		<nav class="nav-wrapper", style="padding: 25px; padding-top: 30px;">
+			<a href="index.html">
+				<h1 style="font-family: optima, serif">
+					<img src="http://www1.coe.neu.edu/Groups/blockchain/Genistreet/logo-final_Lighter.png" title = "return" width ="auto" height = "50" style="float: start">
+					<b>GENISTREET</b>
+				</h1>
+			</a>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="form.html">Submit A Deed</a></li>
+				<li><a checked href="SearchBlocks.html">Search A Record</a></li>
+				<li>
+					<a href="https://www.sec.state.ma.us/rod/rodidx.htm" target="_blank">Registry History</a>
+					<ul>
+						<li>
+							<a href="https://www.masslandrecords.com/suffolk/" target="_blank">
+								Info Site
+							</a>
+						</li>
+						<li>
+							<a href="https://massrods.com/suffolk/contact-and-directions/" target="_blank">
+								Our Contacts
+							</a>
+						</li>
+						<li>
+							<a
+								href="https://www.masslandrecords.com/suffolk/"
+								target="_blank">Current Website</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="AboutUs.html">
+						About Us
+					</a>
+				</li>
+			</ul>
+        </nav>
+    <main>
+        <header style="text-align: left; padding-top: 30px;">
+                <h1>Search Repository</h1>
+				<h4><i>Here, you can search for entries in the blockchain repository.</br></i></h4>
+				<p><b>
+					Search by:
+					<li> &emsp; Grantor First Name or Last Name</li>
+					<li> &emsp; Grantee First Name or Last Name</li>
+					<li> &emsp; Property Address</li>
+				</b></p>
+                <form method = "post" action="SearchBlocks.html">
+                        <input type="text" name ="search_input" onfocus="this.value=''" value="Input Search" size="60"/>
+                    <p>
+					</br>
+					<input type="submit" name="search_submit" value="Submit"/> &emsp; <input type="reset" value="Clear Search" />
+                    </p>
+				</form>
+			</br><hr/>
+        </header>
+        <section>
+            <article style="background-color:#fffbf4">
+				<details>
+					<summary><b><i>Understanding the Output</i></b></summary>
+				</details>
+				<div>
+					<p>
+							<ul>
+                                <li>Hash Code: <code>Unique 64-Character Code</code></li>
+								<li>Block Index: <code>XXXXX</code></li>
+                                <li>Address: <code>Listed Address for the Property</code></li>
+                                <li>Grantor Name: <code>[Last name, First name] <i>or</i> (Corporation name) on File</code></li>
+                                <li>Grantee Name: <code>[Last name, First name] <i>or</i> (Corporation name) on File</code></li>
+                                <li>Prior Hash: <code>sequential unique 64-Character Code</code></li>
+							</ul>
+						</br>
+						For additional information on the attributes click
+						<a href="https://www.investopedia.com/terms/g/guarantor.asp" target="_blank">
+							 here
+						</a>
+					</p>
+				</div>
+			</article>
+        </section>
+    </main>
+
+    </body>
+</html>

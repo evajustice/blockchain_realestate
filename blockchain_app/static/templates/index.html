@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Blockchain Registry Welcome</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<link rel="preload" href="./static/nexmoe3.css" as="style" />
+		<link rel="stylesheet" href="./static/nexmoe3.css" />
+		<link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+		<style>
+			a[target="_blank"]::after {
+				content: "↗";
+			}
+			#download::after {
+				content: none;
+			}
+			article {
+				padding: 2rem;
+			}
+			articlegrid {
+				grid-template-columns: 1fr 1fr;
+				grid-gap: 2rem;
+				display: grid;
+			}
+			@media (max-width: 700px) {
+				articlegrid {
+					grid-template-columns: 1fr;
+				}
+			}
+			mark {
+				background-color: #FFD700;
+				color: black;
+			}
+		</style>
+	</head>
+	<body style="background-color:#FCEED9">
+		<nav class="nav-wrapper", style="padding: 25px; padding-top: 30px;">
+			<a href="index.html">
+				<h1 style="font-family: optima, serif">
+					<img src="http://www1.coe.neu.edu/Groups/blockchain/Genistreet/logo-final_Lighter.png" title = "return" width ="auto" height = "50" style="float: start">
+					<b>GENISTREET</b>
+				</h1>
+			</a>
+			<ul>
+				<li><a checked href="index.html">Home</a></li>
+				<li><a href="form.html">Submit A Deed</a></li>
+				<li><a href="SearchBlocks.html">Search A Record</a></li>
+				<li>
+					<a href="https://www.sec.state.ma.us/rod/rodidx.htm" target="_blank">Registry History</a>
+					<ul>
+						<li>
+							<a
+								href="https://massrods.com/suffolk/contact-and-directions/"
+								target="_blank">Our Contacts</a>
+							<!-- "_blank" is for the arrow indicator next to a link-->
+						</li>
+						<li>
+							<a
+								href="https://www.masslandrecords.com/suffolk/"
+								target="_blank">Current Website</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="AboutUs.html"> About Us</a>
+				</li>
+				<li></li>
+			</ul>
+		</nav>
+
+		<header>
+			<h2>
+				Welcome to the Blockchain Registry of Deeds<br />
+				<u>Search the Blockchain</u> or <u>Record a New Deed</u>
+			</h2>
+			<div class = "button-container">
+				<a
+					id="download"
+					href="form.html">
+					<button>Submit a Deed</button>
+				</a>
+			
+			
+				<a
+					id="download"
+					href="SearchBlocks.html">
+					<button>Search a Record</button>
+				</a>
+			</div>
+			<br />
+		</header>
+		<main>
+			<header style="padding-top:0px;">
+			<p>
+				<img src="http://www1.coe.neu.edu/Groups/blockchain/Genistreet/img/Home/blockchain-gold.jpg" title = "BlockchainVisual" max-width ="100%" width ="600" height = "auto">
+			</p>
+			</header>
+			<section>
+				<hr />
+				<header>
+					<h2 style = "margin-top: -30px;">Quick Facts</h2>
+					<p></p>
+				</header>
+				<articlegrid>
+					<article style="background-color:#fffbf4">
+						<h3>Incoming Volume</h3>
+						<p>
+							The Registry will receive <i>200-300 transactions a day!</i>
+						</p>
+					</article>
+					<article style="background-color:#fffbf4">
+						<h3>Generated Profits</h3>
+						<p>
+							The Suffolk County Registry will make <i>two to three million dollars</i> anually
+							from recording fees
+						</p>
+					</article>
+					<article style="background-color:#fffbf4">
+						<h2>Book Volumes</h2>
+						<p>
+							There are over <i>35,000 physical volumes on site</i> at The Registry.
+							And they are currently <i>recording their 70,000th+ volume!</i></br></br>
+							When a transaction is recorded at the Registry, it is <i>assigned a Book and Page number</i> in sequential order it is received.
+						</p>
+					</article>
+					<article style="background-color:#fffbf4">
+						<h2>In Between the Lines</h2>
+						<p>
+							<img src="http://www1.coe.neu.edu/Groups/blockchain/Genistreet/img/Home/writtenbook.png" title = "Typed Book" width ="300" height = "175"/>
+						</p>
+					</article>
+					<article style="background-color:#fffbf4">
+						<h3>Peek Inside the Registry</h3>
+						<p><img src="http://www1.coe.neu.edu/Groups/blockchain/Genistreet/img/Home/GrantorIndex_Whole.jpeg" title = "Grantor Index 1" width ="150" height = "200"/> &emsp;
+							<img src="http://www1.coe.neu.edu/Groups/blockchain/Genistreet/img/Home/Eliana_GrantorIndex.jpeg" title = "Eliana GrantorIndex" width ="150" height = "200"/>
+						</p>
+					</article>
+					<article style="background-color:#fffbf4">
+						<h3>New & Old Volumes</h3>
+						<p><img src="http://www1.coe.neu.edu/Groups/blockchain/Genistreet/img/Home/RecordingBooks~9000.jpeg" title = "Old Volumes" width ="150" height = "200"/> &emsp;
+							<img src="http://www1.coe.neu.edu/Groups/blockchain/Genistreet/img/Home/RecordBooks1.jpeg" title = "Above Locker Volumes" width ="150" height = "200"/>
+						</p>
+					</article>
+					
+				</articlegrid>
+			</section>
+		</main>
+		<footer>
+			<p>
+				Made with ❤ from
+				<a href="index.html">Your Favorite Capstone Group 4</a>
+			</p>
+			<p>
+				<a href="https://coe.northeastern.edu/" target="_blank">Northeastern College of Engineering</a>
+			</p>
+		</footer>
+	</body>
+	<script></script>
+</html>
