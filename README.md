@@ -2,7 +2,8 @@
 
 Northeastern University Capstone Thesis.
 Repository for Python blockchain and Website code.
-Design title: Genistreet.
+
+	Design title: Genistreet.
 
 Directories included:
 
