@@ -1,6 +1,6 @@
 # Blockchain_RealEstate
 
-Northeastern University Capstone Thesis.
+Northeastern University Industrial Engineering Capstone Thesis.
 Repository for Python blockchain and Website code.
 
 	Prototype title: Genistreet.
