@@ -16,7 +16,7 @@ blockchain_app (Local Blockchain):
 		templates ~ HTML & CSS packages in the forefront;
 		img ~ Images used throughout HTML websites;
 
-Genistreet (Front End on COE Server):
+Genistreet (Front-end on COE Server):
 
 	HomePage.html ~ Start Page;
 	form.html ~ Submission Page;
