@@ -18,7 +18,7 @@ blockchain_app (Local Blockchain):
 
 Genistreet (Front End on COE Server):
 
-	HomePage.html ~ Starting Page;
+	HomePage.html ~ Start Page;
 	form.html ~ Submission Page;
 	AddBlock_bkg.psp ~ Confirmation Submission Page;
 	SearchBlocks.html ~ Search Page;
