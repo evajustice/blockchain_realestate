@@ -1,4 +1,5 @@
 # Import any Packages Used
+import os
 import pandas as pd  # Adds in Data for Blockchain initialization
 import base64  # For converting Images to Strings
 import hashlib as hasher  # Create Hashcodes
@@ -7,6 +8,8 @@ from PIL import Image  # Print image
 from csv import writer
 
 genesis_hash = "76b0cdd60141d895de100892604f7ab5c84847b0bac32c9e533a728bf050cd80"
+# BASENAME = os.path.dirname(os.path.abspath(__file__))
+PARENT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
 # Open csv file and return a dataframe
@@ -176,7 +179,7 @@ def Add_blocks_from_CSV(number_of_blocks):
 # Run to save all current Blockchain Hashcodes
 def Save_hashcodes(blockchain, genesis_hash):
     if blockchain[0].hash == genesis_hash:
-        file = open("blockchain.txt", "w")
+        file = open(os.path.join(PARENT_DIR, "blockchain.txt"), "w")
         for i in range(0, len(blockchain)):
             hash_i = blockchain[i].hash
             file.write(
@@ -192,7 +195,7 @@ def Save_hashcodes(blockchain, genesis_hash):
 
 # Return Hashcodes from first run to blocks
 def Return_hashcodes(blockchain):
-    file = open("blockchain.txt", "r")
+    file = open(os.path.join(PARENT_DIR, "blockchain.txt"), "r")
     text = file.readlines()
     file.close()
     for i in range(0, len(blockchain)):
@@ -356,7 +359,11 @@ def user_block(
         this_signed_doc,
     ]
 
-    with open("RegistryDataset.csv", "a", newline="") as f_object:
+    with open(
+        os.path.join(PARENT_DIR, os.path.join(PARENT_DIR, "RegistryDataset.csv")),
+        "a",
+        newline="",
+    ) as f_object:
         writer_object = writer(f_object)
         writer_object.writerow(New_row)
         f_object.close()
@@ -368,7 +375,9 @@ def user_block(
 # ----------------------------Creation of Blockchain----------------------------
 
 # Import registry dataset
-df_Registry, number_of_blocks = Import_Dataset("RegistryDataset.csv")
+df_Registry, number_of_blocks = Import_Dataset(
+    os.path.join(PARENT_DIR, os.path.join(PARENT_DIR, "RegistryDataset.csv"))
+)
 
 # Creates the blockchain
 blockchain = Add_blocks_from_CSV(number_of_blocks)
